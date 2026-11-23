@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>アストロ・スタディ</title>
+<meta name="description" content="宇宙飛行士選抜試験に向けた一般教養・基礎的専門の学習アプリ">
+<meta name="theme-color" content="#ffffff">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="アストロ">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/svg+xml" href="icons/icon.svg">
+<link rel="apple-touch-icon" href="icons/icon-180.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <button class="back" id="backBtn" aria-label="戻る" hidden>
+    <svg viewBox="0 0 24 24" width="22" height="22"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+  <h1 id="title">アストロ・スタディ</h1>
+  <span class="streak" id="streakBadge" title="連続学習日数"></span>
+</header>
+
+<main id="view"></main>
+
+<nav class="tabbar" id="tabbar">
+  <a href="#/" data-tab="home"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg><span>ホーム</span></a>
+  <a href="#/browse" data-tab="browse"><svg viewBox="0 0 24 24"><path d="M4 5h7v14H4zM13 5h7v14h-7z"/></svg><span>分野別</span></a>
+  <a href="#/mock" data-tab="mock"><svg viewBox="0 0 24 24"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2M9 2h6"/></svg><span>模試</span></a>
+  <a href="#/stats" data-tab="stats"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><span>成績</span></a>
+  <a href="#/notes" data-tab="notes"><svg viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6zM14 3v5h5M9 12h7M9 16h7"/></svg><span>ノート</span></a>
+</nav>
+
+<script src="data/subjects.js"></script>
+<script src="data/q-humanities.js"></script>
+<script src="data/q-social.js"></script>
+<script src="data/q-math.js"></script>
+<script src="data/q-physics-chem.js"></script>
+<script src="data/q-bio-earth.js"></script>
+<script src="data/q-space.js"></script>
+<script src="data/q2-humanities.js"></script>
+<script src="data/q2-social.js"></script>
+<script src="data/q2-stem-a.js"></script>
+<script src="data/q2-stem-b.js"></script>
+<script src="data/notes-hum.js"></script>
+<script src="data/notes-soc.js"></script>
+<script src="data/notes-stem.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
